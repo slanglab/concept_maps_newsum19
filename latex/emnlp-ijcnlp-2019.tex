@@ -68,6 +68,8 @@ Agolo$^{\Agolo}$ \\
 
 \maketitle\begin{abstract}
 Concept maps are visual summaries, structured as directed graphs: important concepts from a dataset are displayed as vertexes, and edges between vertexes show natural language descriptions of the relationships between the concepts on the map. Thus far, preliminary attempts at automatically creating concept maps have focused on building static summaries. However, in interactive settings, users will need to dynamically investigate particular relationships between pairs of concepts. For instance, a historian using a concept map browser might decide to investigate the relationship between two politicians in a news archive. We present a model which responds to such queries by returning one or more short, importance-ranked, natural language descriptions of the relationship between two requested concepts, for display in a visual interface. Our model is trained on a new public dataset, collected for this task.
+
+Code and data are available at:\\ \url{https://github.com/slanglab/ concept_maps_newsum19}
 \end{abstract}
 
 
@@ -86,8 +88,7 @@ However, in interactive settings, users will want to query relationships with a 
 
 This study is concerned with how to add such labeled summary edges to a map. Given a pair of input query concepts, denoted $(t_1)$ and $(t_2)$, we attempt to select the best extractive, natural language \textit{summary statement} which summarizes their relationship. Because there is no existing supervision to guide such a selection, we collect a new dataset of annotated summary statements, which we use to supervise a new model for this task. 
 
-Our study thus presents a full system for summarizing the relationship between an arbitrary pair of query concepts, extending prior work on relational summarization and concept maps \cite{emnlp2017conceptmaps,N18-1159}. 
-  
+Our study thus presents a full system for summarizing the relationship between an arbitrary pair of query concepts, extending prior work on relational summarization and concept maps \cite{emnlp2017conceptmaps,N18-1159}.
 
 \section{Related work: relationship extraction}
 
@@ -201,7 +202,6 @@ In this work, we adopt the basic supervised paradigm underlying much current wor
 
 \section{Acknowledgement}
 Thanks to Haw-Shiuan Chang, Tu Vu and Kalpesh Krishna for helpful comments on earlier drafts of this work. Thanks to the anonymous reviewers for their helpful suggestions; in particular for pointing out possible  connections between relationship summarization and joint extraction of relations and entities, which might be explored in future work.
-
 
 %Include your own bib file like this:
 %{\small\verb|\bibliographystyle{acl_natbib}|
