@@ -1,0 +1,5 @@
+certifi==2019.9.11
+mord==0.6
+numpy==1.16.5
+scikit-learn==0.18
+scipy==1.2.2
